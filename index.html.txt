@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Oslo Rørservice AS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Profesjonell rørlegger i Oslo. Døgnvakt, lekkasjesøk, rehabilitering av bad og VVS-tjenester.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="logo">
+        <!-- Bytt ut med faktisk logo om du vil -->
+        <span class="logo-icon">🔧</span>
+        <span class="logo-text">Oslo Rørservice AS</span>
+    </div>
+    <nav>
+        <a href="#tjenester">Tjenester</a>
+        <a href="#om-oss">Om oss</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Din lokale rørlegger i Oslo</h1>
+            <p>Rask utrykning, solid håndverk og ryddig kommunikasjon. Vi hjelper deg med alt fra lekkasjer til totalrehabilitering av bad.</p>
+            <a href="#kontakt" class="btn-primary">Ring oss nå</a>
+            <p class="hero-phone">Døgnvakt: <a href="tel:+4712345678">+47 12 34 56 78</a></p>
+        </div>
+    </section>
+
+    <section id="tjenester" class="section">
+        <h2>Våre tjenester</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Akutt rørlegger</h3>
+                <p>Rask utrykning ved lekkasjer, tette rør og andre akutte VVS-problemer – hele døgnet.</p>
+            </article>
+            <article class="card">
+                <h3>Bad og rehabilitering</h3>
+                <p>Planlegging og gjennomføring av totalrehabilitering av bad, i samarbeid med andre faggrupper.</p>
+            </article>
+            <article class="card">
+                <h3>Vann, varme og sanitær</h3>
+                <p>Installasjon og service på varmtvannsberedere, røranlegg, armatur og sanitærutstyr.</p>
+            </article>
+            <article class="card">
+                <h3>Serviceavtaler</h3>
+                <p>Fast oppfølging for borettslag, sameier og bedrifter for å forebygge kostbare skader.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="om-oss" class="section section-alt">
+        <h2>Om Oslo Rørservice AS</h2>
+        <p>
+            Vi er et autorisert rørleggerfirma med base i Oslo, med lang erfaring fra både små og store oppdrag.
+            Fokus vårt er kvalitet, trygghet og god dialog med kunden.
+        </p>
+        <p>
+            Alle våre rørleggere er faglærte, og vi følger gjeldende forskrifter og bransjestandarder.
+            Vi gir tydelige priser og avtaler før vi starter arbeidet.
+        </p>
+        <ul class="bullets">
+            <li>Autoriserte rørleggere</li>
+            <li>Døgnvakt ved akutte skader</li>
+            <li>Gratis og uforpliktende befaring</li>
+            <li>Fast kontaktperson gjennom hele oppdraget</li>
+        </ul>
+    </section>
+
+    <section id="kontakt" class="section">
+        <h2>Kontakt oss</h2>
+        <div class="contact-grid">
+            <div>
+                <h3>Telefon og e-post</h3>
+                <p><strong>Telefon:</strong> <a href="tel:+4712345678">+47 12 34 56 78</a></p>
+                <p><strong>E-post:</strong> <a href="mailto:post@oslororservice.no">post@oslororservice.no</a></p>
+                <p><strong>Adresse:</strong> Rørleggerveien 10, 0150 Oslo</p>
+                <p><strong>Åpningstider:</strong> Man–fre 07:00–16:00 (døgnvakt ved akuttbehov)</p>
+            </div>
+            <form class="contact-form">
+                <h3>Send en forespørsel</h3>
+                <label>
+                    Navn
+                    <input type="text" name="navn" placeholder="Ditt navn">
+                </label>
+                <label>
+                    E-post
+                    <input type="email" name="epost" placeholder="din@epost.no">
+                </label>
+                <label>
+                    Telefon
+                    <input type="tel" name="telefon" placeholder="Ditt telefonnummer">
+                </label>
+                <label>
+                    Beskriv oppdraget
+                    <textarea name="melding" rows="4" placeholder="Kort beskrivelse av hva du trenger hjelp til"></textarea>
+                </label>
+                <button type="submit" class="btn-primary" disabled>Send (demo)</button>
+                <p class="form-note">Skjemaet er kun demo. For faktisk henvendelse, bruk telefon eller e-post.</p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> Oslo Rørservice AS · Org.nr. 999 999 999</p>
+</footer>
+
+<script>
+    // Setter årstall automatisk
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
