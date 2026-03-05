@@ -262,6 +262,8 @@ textarea {
     z-index: -2;
 }
 
+}
+
 .hero-inner {
     display: grid;
     grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
